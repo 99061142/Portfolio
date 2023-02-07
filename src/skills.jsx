@@ -6,7 +6,7 @@ import { faPython } from '@fortawesome/free-brands-svg-icons'
 
 export default function Skills() {
     return (
-        <div id="skills" className="p-3">
+        <div id="skills" className="px-3 py-5">
             <h2 className="text-left">TALEN</h2>
 
             <p className="mx-3">De skills die ik binnen mijn projecten gebruik</p>

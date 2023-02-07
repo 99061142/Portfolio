@@ -8,7 +8,7 @@ function Footer() {
     const YEAR = TODAY.getFullYear();
 
     return (
-        <footer className="bg-dark pt-4">     
+        <footer className="bg-dark pt-4 px-3">     
             <Container>
                 <Row className="justify-content-end">
                     <Col className="col-md-6 col-lg-3 mb-3">
@@ -23,6 +23,7 @@ function Footer() {
 
                     <Col className="col-md-6 col-lg-3 mb-3">
                         <p className="mb-2">Contact</p>
+                        
                         <strong className="d-inline-block ms-2 me-1 text-muted">E</strong>
                         <Anchor className="text-decoration-none" href="mailto:xanderbwerk@gmail.com">xanderbwerk@gmail.com</Anchor>
                     </Col>
@@ -41,7 +42,7 @@ function Footer() {
                 </div>
             </div>
 
-            <div className="mx-5 mt-3 border-top border-2">
+            <div className="mx-4 mt-3 border-top border-2">
                 <p className="m-2">@ {YEAR} Xander Briem</p>
             </div>
         </footer>

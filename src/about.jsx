@@ -5,7 +5,7 @@ import { Anchor } from 'react-bootstrap';
 
 export default function About() {
     return (
-        <div className="px-3 pt-3 text-white" id="about" style={{paddingBottom:"400px"}}>
+        <div className="px-3 pt-3 pb-5 text-white" id="about">
             <h1>Xander Briem | <span>Software developer</span></h1>
 
             <Anchor className="text-white" href="https://www.linkedin.com/in/xander-briem/" target="_blank">

@@ -3,7 +3,7 @@ import Project from './project'
 
 function Projects() {
     return (
-        <div id="projects" className="p-3">
+        <div id="projects" className="px-3 py-5">
             <h2 className="text-left">Projecten</h2>
             <div className="d-flex flex-wrap justify-content-center">
                 {featuredProjects
