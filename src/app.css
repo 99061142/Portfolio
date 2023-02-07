@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 span {
+    background: linear-gradient(rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(255,255,0,1) 50%, rgba(255,255,0,1) 30%);
+}
+
+.project {
+    width: 400px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1)
+}
+
+.project a {
+    background-color: #00b8d4;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1)
+}
+
+.project a:hover {
+    background-color: #00b8d4;
+    opacity: 0.8;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3)
+}
+
+.project a:not([href]) {
+    background-color: red;
+    cursor: not-allowed !important;
+}
+
+.nav-link {
+    padding-bottom: 12px;
+    border-bottom: 3px solid transparent;
+}
+
+.nav-link.active {
+    border-bottom: 3px solid yellow;
+}
+
+footer a,
+footer p {
+    font-size: 1.1em;
+}
+
+footer a,
+footer a:hover,
+footer p {
+    color: white;
+}
+
+/* Footer arrow */
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+.arrow > span {
+    width: 5px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: white;
+    margin: 3px;
+    animation: arrow-move 1.5s infinite ease-in-out;
+}
+
+.arrow > span:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.arrow > span:nth-child(2) {
+    transform: rotate(-45deg);
+}
+
+@keyframes arrow-move {
+    0%{margin-top: 30px};
+    50%{margin-top: 0;};
+    100%{margin-top: 30px;};
+}
+/* /Footer arrow */
+
+/* Website background */
+#about {
+    background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.8));
+}
+
+#skills {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
+}
+
+#projects {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 153, 255, 0.1));
+}
+
+.wave {
+    background: linear-gradient(rgba(0, 153, 255, 0.1), rgba(0, 153, 255, 0.9));
+}
+/* /Website background */
