@@ -1,7 +1,7 @@
 import { featuredProjects } from "./featured-projects";
 import Project from './project'
 
-export default function Projects() {
+function Projects() {
     return (
         <div id="projects" className="p-3">
             <h2 className="text-left">Projecten</h2>
@@ -17,3 +17,5 @@ export default function Projects() {
         </div>
     );
 }
+
+export default Projects
