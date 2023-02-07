@@ -1,4 +1,4 @@
-import { Container, Anchor } from 'react-bootstrap';
+import { Button, Container } from 'react-bootstrap';
 
 const Project = ({project, id}) => {
     return (
@@ -8,8 +8,8 @@ const Project = ({project, id}) => {
             <p className="description">{project.description.length != 0 ? project.description : 'No description found.'}</p>
 
             <Container>
-                <Anchor className="btn col-12 col-xl-6 my-2" href={project.page_url}>Live Demo {">"}</Anchor>
-                <Anchor className="btn col-12 col-xl-6 my-2" href={project.github_url}>GitHub {">"}</Anchor>
+                <Button className="text-dark col-12 col-xl-6 my-2" variant={project.page_url ? "primary" : "danger"} href={project.page_url} target="_blank">Live Demo {">"}</Button>
+                <Button className="text-dark col-12 col-xl-6 my-2" variant={project.github_url ? "primary" : "danger"} href={project.github_url} target="_blank">GitHub {">"}</Button>
             </Container>
         </div>
     );

@@ -30,19 +30,7 @@ h1 span {
 }
 
 .project a {
-    background-color: #00b8d4;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1)
-}
-
-.project a:hover {
-    background-color: #00b8d4;
-    opacity: 0.8;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3)
-}
-
-.project a[href="#"] {
-    background-color: red;
-    cursor: not-allowed !important;
 }
 
 .nav-link {
