@@ -11,7 +11,7 @@ function Footer() {
         <footer className="bg-dark pt-4 px-3">     
             <Container>
                 <Row className="justify-content-end">
-                    <Col className="col-md-6 col-lg-3 mb-3">
+                    <Col className="col-12 col-md-6 col-lg-3 mb-3">
                         <p className="mb-2">Socials</p>
                         <Anchor className="mx-2" href="https://www.linkedin.com/in/xander-briem/" target="_blank">
                             <FontAwesomeIcon className="fa-lg border rounded-circle" style={{padding:'6px'}} icon={faLinkedin} />
@@ -21,7 +21,7 @@ function Footer() {
                         </Anchor>
                     </Col>
 
-                    <Col className="col-md-6 col-lg-3 mb-3">
+                    <Col className="col-12 col-md-6 col-lg-3 mb-3">
                         <p className="mb-2">Contact</p>
                         
                         <strong className="d-inline-block ms-2 me-1 text-muted">E</strong>
