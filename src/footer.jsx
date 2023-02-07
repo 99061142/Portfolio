@@ -32,8 +32,8 @@ function Footer() {
             <div className="flex-column text-center">
                 <div>
                     <Anchor className="text-decoration-none arrow d-inline-flex align-items-center" href="/">
-                            <span></span>
-                            <span></span>
+                        <span></span>
+                        <span></span>
                     </Anchor>
                 </div>
                 <div>
