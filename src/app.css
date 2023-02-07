@@ -67,9 +67,6 @@ footer p {
 
 /* Footer arrow */
 .arrow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 20px;
     margin-bottom: 20px;
 }
