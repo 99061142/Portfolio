@@ -41,8 +41,8 @@ function Footer() {
                 </div>
             </div>
 
-            <div className="mx-5 border-top border-2">
-                <p className="mt-2 ms-2 m-0">@ {YEAR} Xander Briem</p>
+            <div className="mx-5 mt-3 border-top border-2">
+                <p className="m-2">@ {YEAR} Xander Briem</p>
             </div>
         </footer>
     );
