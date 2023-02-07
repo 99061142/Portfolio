@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Project = ({project, id}) => {
     return (
         <div className="p-2 m-3 project" key={id}>
