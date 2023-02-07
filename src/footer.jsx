@@ -23,7 +23,6 @@ function Footer() {
 
                     <Col className="col-12 col-md-6 col-lg-3 mb-3">
                         <p className="mb-2">Contact</p>
-                        
                         <strong className="d-inline-block ms-2 me-1 text-muted">E</strong>
                         <Anchor className="text-decoration-none" href="mailto:xanderbwerk@gmail.com">xanderbwerk@gmail.com</Anchor>
                     </Col>
