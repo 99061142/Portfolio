@@ -11,7 +11,7 @@ function Footer() {
         <footer className="bg-dark pt-4">     
             <Container>
                 <Row className="justify-content-end">
-                    <Col className="col-12 col-md-6 col-lg-3 mb-3">
+                    <Col className="col-md-6 col-lg-3 mb-3">
                         <p className="mb-2">Socials</p>
                         <Anchor className="mx-2" href="https://www.linkedin.com/in/xander-briem/" target="_blank">
                             <FontAwesomeIcon className="fa-lg border rounded-circle" style={{padding:'6px'}} icon={faLinkedin} />
@@ -21,7 +21,7 @@ function Footer() {
                         </Anchor>
                     </Col>
 
-                    <Col className="col-12 col-md-6 col-lg-3 mb-3">
+                    <Col className="col-md-6 col-lg-3 mb-3">
                         <p className="mb-2">Contact</p>
                         <strong className="d-inline-block ms-2 me-1 text-muted">E</strong>
                         <Anchor className="text-decoration-none" href="mailto:xanderbwerk@gmail.com">xanderbwerk@gmail.com</Anchor>
@@ -41,7 +41,9 @@ function Footer() {
                 </div>
             </div>
 
-            <p className="mx-5 border-top border-2 py-2 m-0">@ {YEAR} Xander Briem</p>
+            <div className="mx-5 border-top border-2">
+                <p className="mt-2 ms-2 m-0">@ {YEAR} Xander Briem</p>
+            </div>
         </footer>
     );
 }
