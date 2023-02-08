@@ -18,7 +18,7 @@ code {
     flex-direction: column;
 }
 
-h1 span {
+#about h1 span {
     background: linear-gradient(rgba(255,255,255,0) 0%, rgba(255,255,255,0) 60%, rgba(255,255,0,1) 50%, rgba(255,255,0,1) 30%);
 }
 
@@ -85,11 +85,11 @@ footer p {
 
 /* Website background */
 #about {
-    background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.8));
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5));
 }
 
 #skills {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4));
 }
 
 #projects {

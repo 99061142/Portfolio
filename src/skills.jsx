@@ -6,10 +6,10 @@ import { faPython } from '@fortawesome/free-brands-svg-icons'
 
 export default function Skills() {
     return (
-        <div id="skills" className="px-3 py-5">
-            <h2 className="text-left">TALEN</h2>
-
+        <div id="skills" className="px-3 py-5 text-black">
+            <h2>TALEN</h2>
             <p className="mx-3">De skills die ik binnen mijn projecten gebruik</p>
+
             <div className="container mx-auto">
                 <div className="row justify-content-around text-center">
                     <div className="col-6 col-md-3 col-lg-2 my-3">
@@ -29,7 +29,7 @@ export default function Skills() {
                         <FontAwesomeIcon className="display-4 text-dark" icon={faPython} />
                         <span className="text-dark d-block">Python</span>
                     </div>
-                </div> 
+                </div>
             </div>
         </div>
     );

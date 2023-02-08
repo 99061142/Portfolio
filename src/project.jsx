@@ -2,7 +2,7 @@ import { Button, Container } from 'react-bootstrap';
 
 const Project = ({project, id}) => {
     return (
-        <div className="p-2 m-3 project" key={id}>
+        <div className="p-2 m-3 project text-black" key={id}>
             <p className="title text-primary">{project.title}</p>
             <p className="languages">{project.languages.join(', ')}</p>
             <p className="description">{project.description.length != 0 ? project.description : 'No description found.'}</p>

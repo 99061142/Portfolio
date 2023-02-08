@@ -8,16 +8,16 @@ function Footer() {
     const YEAR = TODAY.getFullYear();
 
     return (
-        <footer className="bg-dark pt-4 px-3">     
+        <footer className="bg-dark pt-4 px-3">
             <Container>
                 <Row className="justify-content-end">
                     <Col className="col-12 col-md-6 col-lg-3 mb-3">
                         <p className="mb-2">Socials</p>
                         <Anchor className="mx-2" href="https://www.linkedin.com/in/xander-briem/" target="_blank">
-                            <FontAwesomeIcon className="fa-lg border rounded-circle" style={{padding:'6px'}} icon={faLinkedin} />
+                            <FontAwesomeIcon className="fa-lg border rounded-circle" style={{ padding: '6px' }} icon={faLinkedin} />
                         </Anchor>
                         <Anchor className="mx-2" href="https://github.com/99061142" target="_blank">
-                            <FontAwesomeIcon className="fa-lg border rounded-circle" style={{padding:'6px'}} icon={faGithub} />
+                            <FontAwesomeIcon className="fa-lg border rounded-circle" style={{ padding: '6px' }} icon={faGithub} />
                         </Anchor>
                     </Col>
 
