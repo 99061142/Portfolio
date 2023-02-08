@@ -1,8 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHtml5 } from '@fortawesome/free-brands-svg-icons'
-import { faCss3Alt } from '@fortawesome/free-brands-svg-icons'
-import { faSquareJs } from '@fortawesome/free-brands-svg-icons'
-import { faPython } from '@fortawesome/free-brands-svg-icons'
+import { faHtml5, faCss3Alt, faSquareJs, faPython } from '@fortawesome/free-brands-svg-icons'
 
 export default function Skills() {
     return (
