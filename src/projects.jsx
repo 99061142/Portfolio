@@ -7,12 +7,12 @@ function Projects() {
             <h2 className="text-black">Projecten</h2>
             <div className="d-flex flex-wrap justify-content-center">
                 {featuredProjects
-                .filter(dict => dict.github_url || dict.page_url)
-                .map((project) => {
-                    return (
-                        <Project project={project} key={project.id} id={project.id} />
-                    )
-                })}
+                    .filter(dict => dict.github_url || dict.page_url)
+                    .map((project, key) => {
+                        return (
+                            <Project project={project} key={key} />
+                        )
+                    })}
             </div>
         </div>
     );
