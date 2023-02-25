@@ -8,8 +8,8 @@ const Project = ({ project }) => {
             <p className="description">{project.description.length !== 0 ? project.description : 'No description found.'}</p>
 
             <Container>
-                <Button className="text-dark col-12 col-xl-6 my-2" variant={project.page_url ? "primary" : "danger"} href={'/' + project.page_url} target="_blank">Live Demo {">"}</Button >
-                <Button className="text-dark col-12 col-xl-6 my-2" variant={project.github_url ? "primary" : "danger"} href={project.github_url} target="_blank">GitHub {">"}</Button >
+                <Button className="text-dark col-12 col-xl-6 my-2" variant={project.page_url ? "primary" : "danger"} href={'/' + project.page_url} disabled={!project.page_url} target="_blank">Live Demo {">"}</Button >
+                <Button className="text-dark col-12 col-xl-6 my-2" variant={project.github_url ? "primary" : "danger"} href={project.github_url} disabled={!project.github_url} target="_blank">GitHub {">"}</Button >
             </Container >
         </div >
     );
