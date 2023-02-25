@@ -36,7 +36,7 @@ function Footer() {
                     </Anchor>
                 </div>
                 <div>
-                    <Anchor className="text-decoration-none" href="/">BACK TO TOP</Anchor>
+                    <Anchor className="text-decoration-none" href="#">BACK TO TOP</Anchor>
                 </div>
             </div>
 
