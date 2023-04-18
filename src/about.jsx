@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { Anchor } from 'react-bootstrap';
 
-export default function About() {
+function About() {
     return (
         <div className="px-3 pt-3 pb-5 text-black" id="about">
             <h1>Xander Briem | <span>Software developer</span></h1>
@@ -18,3 +18,5 @@ export default function About() {
         </div>
     );
 }
+
+export default About;
