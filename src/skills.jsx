@@ -1,33 +1,32 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHtml5, faCss3Alt, faSquareJs, faPython } from '@fortawesome/free-brands-svg-icons'
+import { faReact } from '@fortawesome/free-brands-svg-icons';
+import { Container, Row, Col } from 'react-bootstrap';
 
-export default function Skills() {
+function Skills() {
+    const SKILLS = {
+        'React': faReact,
+        'JS': faSquareJs,
+        'Python': faPython,
+        'HTML': faHtml5,
+        'CSS': faCss3Alt
+    };
     return (
-        <div id="skills" className="px-3 py-5 text-black">
-            <h2>TALEN</h2>
-            <p className="mx-3">De skills die ik binnen mijn projecten gebruik</p>
-
-            <div className="container mx-auto">
-                <div className="row justify-content-around text-center">
-                    <div className="col-6 col-md-3 col-lg-2 my-3">
-                        <FontAwesomeIcon className="display-4 text-dark" icon={faHtml5} />
-                        <span className="d-block text-dark">HTML</span>
-                    </div>
-                    <div className="col-6 col-md-3 col-lg-2 my-3">
-                        <FontAwesomeIcon className="display-4 text-dark" icon={faCss3Alt} />
-                        <span className="text-dark d-block ">CSS</span>
-                    </div>
-                    <div className="col-6 col-md-3 col-lg-2 my-3">
-                        <FontAwesomeIcon className="display-4 text-dark" icon={faSquareJs} />
-                        <span className="text-dark d-block">JS</span>
-                    </div>
-
-                    <div className="col-6 col-md-3 col-lg-2 my-3">
-                        <FontAwesomeIcon className="display-4 text-dark" icon={faPython} />
-                        <span className="text-dark d-block">Python</span>
-                    </div>
-                </div>
-            </div>
+        <div id='skills' className='px-3 py-5 text-black'>
+            <h2>SKILLS</h2>
+            <p className='mx-3'>De skills die ik binnen mijn projecten gebruik</p>
+            <Container>
+                <Row className='justify-content-around text-center'>
+                    {Object.entries(SKILLS).map(([skill, icon], key) =>
+                        <Col xs={4} md={3} lg={true} key={key}>
+                            <FontAwesomeIcon size='4x' icon={icon} />
+                            <p>{skill}</p>
+                        </Col>
+                    )}
+                </Row>
+            </Container>
         </div>
     );
 }
+
+export default Skills;
