@@ -1,4 +1,4 @@
-import { featuredProjects } from "./featured-projects";
+import featuredProjects from './featured-projects'
 import Project from './project'
 
 function Projects() {
@@ -10,7 +10,7 @@ function Projects() {
                     .filter(dict => dict.github_url || dict.page_url)
                     .map((project, key) => {
                         return (
-                            <Project project={project} key={key} />
+                            <Project {...project} key={key} />
                         )
                     })}
             </div>
