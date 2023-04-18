@@ -1,7 +1,7 @@
 import { Link } from 'react-scroll'
 import { Container, Navbar, Nav } from 'react-bootstrap';
 
-export default function Navigation() {
+function Navigation() {
     return (
         <Navbar sticky="top" bg="dark" expand="sm" variant="dark">
             <Container fluid>
@@ -18,3 +18,5 @@ export default function Navigation() {
         </Navbar>
     );
 }
+
+export default Navigation;
