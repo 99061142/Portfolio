@@ -1,24 +1,21 @@
 [
     {
         "title": "Pathfinding",
-        "languages": null,
-        "frameworks": ["React"],
+        "skills": ["React"],
         "description": "Bord met verschilende algorithmes om het pad van A naar B te vinden. Ook kan het bord muren en gewichten bevatten, hiermee simuleert het drukkere wegen.",
         "github_url": "https://github.com/99061142/Pathfinding",
         "page_url": "https://99061142.github.io/Pathfinding"
     },
     {
         "title": "List Sorter",
-        "languages": null,
-        "frameworks": ["React"],
+        "skills": ["React"],
         "description": "Sorteer een gegenereerde lijst van getallen van het laagste nummer tot het hoogste nummer, en laat de methode zien aan de gebruiker.",
         "github_url": "https://github.com/99061142/Sorting-Visualiser",
         "page_url": "https://99061142.github.io/Sorting-Visualiser"
     },
     {
         "title": "CRUD login",
-        "languages": ["SQL"],
-        "frameworks": ["CodeIgniter"],
+        "skills": ["CodeIgniter", "SQL"],
         "description": "Laat de gebruiker een account aanmaken, inloggen, account veranderen en account verwijderen. Hiermee heb ik de CRUD standaarden geleerd binnen CodeIgniter, en geleerd hoe je een database kunt uitlezen.",
         "github_url": "https://github.com/99061142/CRUD-login",
         "page_url": null
