@@ -1,45 +1,39 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { Container, Anchor, Row, Col, Button } from 'react-bootstrap';
+import Socials from './socials';
+import Contacts from './contacts';
 
 function Footer() {
-    const TODAY = new Date()
-    const YEAR = TODAY.getFullYear();
+    const NOW = new Date()
+    const YEAR = NOW.getFullYear();
 
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
             left: 0,
-            behavior: "smooth",
+            behavior: 'smooth'
         });
     }
 
     return (
-        <footer className="bg-dark pt-4 px-3" >
+        <footer className='bg-dark pt-4 px-3'>
             <Container>
-                <Row className="justify-content-end">
-                    <Col className="col-12 col-md-6 col-lg-3 mb-3">
-                        <p className="mb-2">Socials</p>
-                        <Anchor className="mx-2" href="https://www.linkedin.com/in/xander-briem/" target="_blank">
-                            <FontAwesomeIcon className="fa-lg border rounded-circle" style={{ padding: '6px' }} icon={faLinkedin} />
-                        </Anchor>
-                        <Anchor className="mx-2" href="https://github.com/99061142" target="_blank">
-                            <FontAwesomeIcon className="fa-lg border rounded-circle" style={{ padding: '6px' }} icon={faGithub} />
-                        </Anchor>
+                <Row className='justify-content-end'>
+                    <Col xs={12} md={6} lg={3} className='mb-3'>
+                        <p className='mb-2'>Socials</p>
+                        <Socials anchorClassNames='mx-2' iconClassNames='fa-lg border rounded-circle' />
                     </Col>
-                    <Col className="col-12 col-md-6 col-lg-3 mb-3">
-                        <p className="mb-2">Contact</p>
-                        <strong className="d-inline-block ms-2 me-1 text-muted">E</strong>
-                        <Anchor className="text-decoration-none" href="mailto:xanderbwerk@gmail.com">xanderbwerk@gmail.com</Anchor>
+                    <Col xs={12} md={6} lg={3} className='mb-3'>
+                        <p className='mb-2'>Contact</p>
+                        <Contacts />
                     </Col>
                 </Row>
             </Container>
-            <div className="flex-column text-center">
+            <div className='flex-column text-center'>
                 <div>
                     <Button
-                        variant="text"
-                        className="text-decoration-none arrow d-inline-flex align-items-center"
-                        onClick={() => scrollToTop()}
+                        variant='text'
+                        className='text-decoration-none arrow d-inline-flex align-items-center'
+                        onClick={scrollToTop}
                     >
                         <span></span>
                         <span></span>
@@ -47,16 +41,16 @@ function Footer() {
                 </div>
                 <div>
                     <Button
-                        variant="text"
-                        className="text-decoration-none text-white"
-                        onClick={() => scrollToTop()}
+                        variant='text'
+                        className='text-decoration-none text-white'
+                        onClick={scrollToTop}
                     >
                         BACK TO TOP
                     </Button>
                 </div>
             </div>
-            <div className="mx-4 mt-3 border-top border-2">
-                <p className="m-2">@ {YEAR} Xander Briem</p>
+            <div className='mx-4 mt-3 border-top border-2'>
+                <p className='m-2'>@ {YEAR} Xander Briem</p>
             </div>
         </footer>
     );
