@@ -1,19 +1,21 @@
-import featuredProjects from './featured-projects'
-import Project from './project'
+import { Container, Row } from 'react-bootstrap';
+import featuredProjects from './featured-projects';
+import Project from './project';
 
 function Projects() {
     return (
-        <div id="projects" className="px-3 py-5">
-            <h2 className="text-black">Projecten</h2>
-            <div className="d-flex flex-wrap justify-content-center">
-                {featuredProjects
-                    .filter(dict => dict.github_url || dict.page_url)
-                    .map((project, key) => {
-                        return (
+        <div id='projects' className='px-3 py-5'>
+            <h2 className='text-black'>Projecten</h2>
+            <Container>
+                <Row className='justify-content-around'>
+                    {featuredProjects
+                        .filter(project => project.github_url || project.page_url)
+                        .map((project, key) =>
                             <Project {...project} key={key} />
                         )
-                    })}
-            </div>
+                    }
+                </Row>
+            </Container>
         </div>
     );
 }
