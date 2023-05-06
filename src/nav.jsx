@@ -1,21 +1,47 @@
 import { Link } from 'react-scroll'
 import { Container, Navbar, Nav } from 'react-bootstrap';
+import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
+import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
+import NavbarBrand from 'react-bootstrap/esm/NavbarBrand';
 
 function Navigation() {
+    const LINKS = [
+        {
+            'text': 'Over-mij',
+            'to': 'about'
+        },
+        {
+            'text': 'Skills',
+            'to': 'skills'
+        },
+        {
+            'text': 'Projecten',
+            'to': 'projects'
+        }
+    ];
     return (
-        <Navbar sticky="top" bg="dark" expand="sm" variant="dark">
+        <Navbar sticky='top' bg='dark' expand='sm' variant='dark'>
             <Container fluid>
-                <Navbar.Brand href="#">Portfolio</Navbar.Brand>
-                <Navbar.Toggle aria-controls="navbarScroll" />
-                <Navbar.Collapse id="navbarScroll">
-                    <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '130px' }} navbarScroll>
-                        <Link className="nav-link" activeClass="active" to="about" spy={true} offset={-100}>Over-mij</Link>
-                        <Link className="nav-link" activeClass="active" to="skills" spy={true} offset={-100}>Skills</Link>
-                        <Link className="nav-link" activeClass="active" to="projects" spy={true} offset={-100}>Projecten</Link>
+                <NavbarBrand href='#'>Portfolio</NavbarBrand>
+                <NavbarToggle aria-controls='navbarScroll' />
+                <NavbarCollapse id='navbarScroll'>
+                    <Nav className='me-auto my-2 my-lg-0' navbarScroll>
+                        {LINKS.map(({ text, to }, key) =>
+                            <Link
+                                className='nav-link'
+                                activeClass='active'
+                                to={to}
+                                spy={true}
+                                offset={-100}
+                                key={key}
+                            >
+                                {text}
+                            </Link>
+                        )}
                     </Nav>
-                </Navbar.Collapse>
+                </NavbarCollapse>
             </Container>
-        </Navbar>
+        </Navbar >
     );
 }
 
