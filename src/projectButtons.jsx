@@ -13,6 +13,7 @@ function ProjectButtons(project) {
                             key={key}
                         >
                             <Button
+                                style={{ boxShadow: '2px 2px 8px rgba(0, 0, 0, 0.1)' }}
                                 className='text-dark my-2 w-100'
                                 variant='primary'
                                 href={url}
@@ -24,7 +25,7 @@ function ProjectButtons(project) {
                     )}
             </Row>
         </Container>
-    )
+    );
 }
 
 export default ProjectButtons
