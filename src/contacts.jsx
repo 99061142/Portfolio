@@ -2,7 +2,7 @@ import { Anchor } from "react-bootstrap"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-function Contacts() {
+function Contacts({ anchorClassNames, iconClassNames }) {
     const CONTACTS = [
         {
             icon: faEnvelope,
@@ -12,19 +12,23 @@ function Contacts() {
     ];
     return (
         CONTACTS.map(({ href, icon, anchorText }, key) =>
-            <div className='ms-2 d-flex align-items-center' key={key}>
+            <div
+                className='ms-2 d-flex align-items-center'
+                key={key}
+            >
                 <FontAwesomeIcon
-                    className='pe-2 text-white'
+                    className={iconClassNames || null}
                     icon={icon}
                 />
                 <Anchor
-                    className='text-decoration-none'
+                    className={anchorClassNames || null}
                     href={href}
                 >
                     {anchorText}
                 </Anchor>
             </div>
-        ))
+        )
+    );
 }
 
 export default Contacts
