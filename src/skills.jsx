@@ -27,19 +27,32 @@ function Skills() {
         }
     ];
     return (
-        <div id='skills' className='ps-3 py-5 text-black'>
+        <div
+            id='skills'
+            className='px-3 pt-5 text-black'
+        >
             <h2>
                 SKILLS
             </h2>
-            <p className='ms-3'>
+            <p className='my-3'>
                 De skills die ik binnen mijn projecten gebruik
             </p>
             <Container>
                 <Row className='justify-content-around text-center'>
                     {SKILLS.map(({ skill, icon }, key) =>
-                        <Col xs={4} md={3} lg={true} key={key}>
-                            <FontAwesomeIcon size='4x' icon={icon} />
-                            <p className='mb-0'>{skill}</p>
+                        <Col
+                            className='my-2'
+                            xs={4} md={3}
+                            lg={true}
+                            key={key}
+                        >
+                            <FontAwesomeIcon
+                                size='4x'
+                                icon={icon}
+                            />
+                            <p className='mb-0'>
+                                {skill}
+                            </p>
                         </Col>
                     )}
                 </Row>
