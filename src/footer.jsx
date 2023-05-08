@@ -67,7 +67,7 @@ function Footer() {
                     </Link>
                 </li>
             </ul>
-            <div className='mx-4 mt-3 border-top border-2'>
+            <div className='mx-4 border-top border-2'>
                 <div className='py-2 d-flex align-items-center'>
                     <FontAwesomeIcon
                         className='text-white mx-2'
