@@ -20,19 +20,27 @@ function Navigation() {
         }
     ];
     return (
-        <Navbar sticky='top' bg='dark' expand='sm' variant='dark'>
+        <Navbar
+            sticky='top'
+            bg='dark'
+            expand='sm'
+            variant='dark'
+        >
             <Container fluid>
                 <NavbarBrand href='#'>Portfolio</NavbarBrand>
                 <NavbarToggle aria-controls='navbarScroll' />
                 <NavbarCollapse id='navbarScroll'>
-                    <Nav className='me-auto my-2 my-lg-0' navbarScroll>
+                    <Nav
+                        className='me-auto my-2 my-lg-0'
+                        navbarScroll
+                    >
                         {LINKS.map(({ text, to }, key) =>
                             <Link
-                                className='nav-link'
-                                activeClass='active'
+                                activeStyle={{ borderBottom: '3px solid yellow' }}
+                                className='nav-link pb-2'
                                 to={to}
                                 spy={true}
-                                offset={-100}
+                                offset={-175}
                                 key={key}
                             >
                                 {text}
@@ -40,7 +48,7 @@ function Navigation() {
                         )}
                     </Nav>
                 </NavbarCollapse>
-            </Container>
+            </Container >
         </Navbar >
     );
 }
