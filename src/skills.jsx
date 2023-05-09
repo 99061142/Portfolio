@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHtml5, faCss3Alt, faSquareJs, faPython } from '@fortawesome/free-brands-svg-icons'
-import { faReact } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5, faCss3Alt, faSquareJs, faPython, faReact } from '@fortawesome/free-brands-svg-icons'
 import { Container, Row, Col } from 'react-bootstrap';
 
 function Skills() {
@@ -42,7 +41,8 @@ function Skills() {
                     {SKILLS.map(({ skill, icon }, key) =>
                         <Col
                             className='my-2'
-                            xs={4} md={3}
+                            xs={4}
+                            md={3}
                             lg={true}
                             key={key}
                         >
