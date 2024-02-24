@@ -4,14 +4,14 @@
         "skills": ["React"],
         "description": "Bord met verschilende algorithmes om het pad van A naar B te vinden. Ook kan het bord muren en gewichten bevatten, hiermee simuleert het drukkere wegen.",
         "github_url": "https://github.com/99061142/Pathfinding",
-        "page_url": "https://99061142.github.io/Pathfinding"
+        "page_url": "https://99061142.github.io/Pathfinding-Visualizer"
     },
     {
         "title": "List Sorter",
         "skills": ["React"],
         "description": "Sorteer een gegenereerde lijst van getallen van het laagste nummer tot het hoogste nummer, en laat de methode zien aan de gebruiker.",
         "github_url": "https://github.com/99061142/Sorting-Visualiser",
-        "page_url": "https://99061142.github.io/Sorting-Visualiser"
+        "page_url": "https://99061142.github.io/Sorting-Visualizer"
     },
     {
         "title": "CRUD login",
